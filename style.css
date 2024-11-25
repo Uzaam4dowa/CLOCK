@@ -1,0 +1,129 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana;
+}
+  body,.frame,.board,.main-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+.frame{
+    width: 310px;
+    height: 310px;
+    background-color: #0d85b4;
+    border-radius: 80px 80px 0px 0px;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    box-shadow:  6px 6px 10px #0a0a0a;
+}
+.clock{
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    /* border: 1px solid tomato; */
+    color: white;
+    background-color: #dde1e7;
+    border-radius: 20%;
+    position: relative;
+    box-shadow: -6px -6px 14px #2b05d1,  6px 6px 10px #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock::after{
+    content: '';
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: inset -6px -6px 14px #6a78f3, inset 6px 6px 10px #999999;
+}
+.hour, .minute, .second{
+    background-color: black;
+    width: 40%;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+.hour{
+    width: 25%;
+    height: 10px;
+}
+.minute{
+    width: 33%; 
+    height: 6px;
+}
+.second{
+    height: 3px;
+    width: 40%;
+    background-color: red;
+}
+.center{
+    background-color: red;
+    border: 2px solid black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 49%;
+    left: 48.5%;
+}
+.one, .two, .three, .four, .five, .six,
+.seven, .eight, .nine, .ten, .eleven, .twelve{
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 32px;
+    line-height: 72px;
+    width: 40px;
+    
+}
+
+.twelve{ top: -3.5%; right: 45%; }
+.one{ top: 3%; right: 19%; }
+.two{ top: 20%; right: 3%; }
+.three{ top: 42%; right: -3%; }
+.four{ top: 62%; right: 3%; }
+.five{ top: 78.5%; right: 18%; }
+.six{ bottom: -3.5%; right: 42%; }
+.seven{ top: 78%; left: 22.5%; }
+.eight{ top: 62%; left: 8%; }
+.nine{ top: 42%; left: 3%; }
+.ten{ top: 20%; left: 6%; }
+.eleven{ top: 3%; left: 22%; }
+
+
+.tag{
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 70%;
+}
+.p1{
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: black;
+    
+}
+.p2{
+    font-family: Kunstler Script;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
